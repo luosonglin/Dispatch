@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_ry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- android:layout_alignParentTop="true"  -->
+        <include layout="@layout/home_title_layout_common" />
+        <!-- 标题部分 -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/city_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/txtfind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="10dip"
+            android:hint="@string/question" >
+        </EditText>
+
+        <ListView
+            android:id="@+id/listfind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+        </ListView>
+
+        <ExpandableListView
+            android:id="@+id/exList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
