@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.songlin.luo.activity.dispatch" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name=".PersonActivity"
+            android:label="@string/title_activity_person" >
+        </activity>
+        <activity
+            android:name=".SpecificOrderActivity"
+            android:label="@string/title_activity_specific_order" >
+        </activity>
+        <activity
+            android:name=".OrderASideActivity"
+            android:label="@string/title_activity_order_aside" >
+        </activity>
+        <activity
+            android:name=".OrderBSideActivity"
+            android:label="@string/title_activity_order_bside" >
+        </activity>
+        <activity
+            android:name=".OrderCSideActivity"
+            android:label="@string/title_activity_order_cside" >
+        </activity>
+    </application>
+
+</manifest>
