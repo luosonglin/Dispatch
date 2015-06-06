@@ -27,12 +27,11 @@ public class OrderCSideActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_cside);
 
-        initRes();
-
+        //initRes();
         //java.lang.OutOfMemoryError
-        //initView();
+
     }
-    private void initRes(){
+    /*private void initRes(){
         tvTitle = (TextView) findViewById(R.id.tvTitle);
         gallery = (GalleryView) findViewById(R.id.mygallery);
 
@@ -57,37 +56,5 @@ public class OrderCSideActivity extends Activity {
                 Toast.makeText(OrderCSideActivity.this, "img " + (position+1) + " selected", Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    /*private void initView(){
-        orderLayout = (LinearLayout)findViewById(R.id.order_layout);
-        int ii=orderLayout.getChildCount();
-        String a=Integer.toString(ii);
-        Toast.makeText(OrderCSideActivity.this,a, Toast.LENGTH_LONG).show();
-        for (int i = 0; i < orderLayout.getChildCount(); i++) {
-            View view = orderLayout.getChildAt(i);
-            TextView title1 = (TextView) view.findViewById(R.id.order_detail_left);
-            title1.setText(title[i]);
-            TextView content = (TextView) view.findViewById(R.id.order_detail_right);
-
-            switch (i) {
-                case 0:
-                    content.setText("很多很多介绍");
-                    break;
-                case 1:
-                    content.setText("很多很多介绍");
-                    break;
-                case 2:
-                    content.setText("很多很多介绍");
-                    break;
-                case 3:
-                    content.setText("很多很多介绍");
-                    break;
-                case 4:
-                    content.setText("很多很多介绍");
-                    break;
-            }
-        }
-
     }*/
 }

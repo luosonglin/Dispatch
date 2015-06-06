@@ -17,53 +17,13 @@
         android:layout_marginTop="8dp"
         android:background="#D7D6DC" />
 
-    <com.songlin.luo.ui.GalleryView
+<!--    <com.songlin.luo.ui.GalleryView
         android:id="@+id/mygallery"
         android:spacing="20dp"
         android:layout_width="fill_parent"
         android:layout_height="250dp"
         android:unselectedAlpha="128"
         android:layout_below="@id/tvTitle"
-        android:layout_marginTop="10dip" />
-
-    <!--<View
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#D7D6DC" />
-
-    <LinearLayout
-        android:id="@+id/order_layout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <include
-            android:id="@+id/order_price"
-            layout="@layout/order_detail_child"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <include
-            android:id="@+id/order_price"
-            layout="@layout/order_detail_child"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <include
-            android:id="@+id/order_price"
-            layout="@layout/order_detail_child"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <include
-            android:id="@+id/order_price"
-            layout="@layout/order_detail_child"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <include
-            android:id="@+id/order_price"
-            layout="@layout/order_detail_child"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>-->
+        android:layout_marginTop="10dip" />-->
 
 </LinearLayout>

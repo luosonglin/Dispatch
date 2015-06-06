@@ -30,9 +30,9 @@
     <string name="user_recommend_tip">TA的业务</string>
     <string name="question">请输入订单号</string>
 
-    <color name="white">#ffffff</color>
+    <!--<color name="white">#ffffff</color>
     <color name="black">#00000000</color>
-
+-->
     <string name="title_activity_menu">资讯页面</string>
     <string name="title_activity_order">OrderActivity</string>
     <string name="title_activity_person">PersonActivity</string>
@@ -40,5 +40,18 @@
     <string name="title_activity_order_aside">OrderASideActivity</string>
     <string name="title_activity_order_bside">OrderBSideActivity</string>
     <string name="title_activity_order_cside">OrderCSideActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+    <string name="head">头像</string>
+    <string name="account">账户</string>
+    <string name="change_password">修改密码</string>
+    <string name="change_version">版本更新</string>
+    <string name="about_zhaime">关于移动派工</string>
+    <string name="log_out">退出登录</string>
+    <string name="about_clean">清理缓存</string>
+
+    <string name="switch_list">ListView</string>
+    <string name="switch_button">Buttons</string>
+    <string name="switch_recycler">RecyclerView</string>
 
 </resources>

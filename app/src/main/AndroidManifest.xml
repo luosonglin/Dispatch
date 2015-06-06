@@ -44,6 +44,10 @@
             android:name=".OrderCSideActivity"
             android:label="@string/title_activity_order_cside" >
         </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
     </application>
 
 </manifest>

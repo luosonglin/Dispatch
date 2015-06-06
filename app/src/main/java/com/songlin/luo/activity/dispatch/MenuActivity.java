@@ -63,6 +63,9 @@ public class MenuActivity extends Activity implements OnGestureListener,
             @Override
             public void onClick(View v) {
                 toastInfo("设置");
+                Intent intent = new Intent();
+                intent.setClass(MenuActivity.this, SettingActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -2,7 +2,52 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/button_material_dark</item>
+        <item name="colorAccent">@color/button_material_light</item>
+    </style>
+    <style name="Ripple"><!--
+        <item name="rippleColor">@color/ripple</item>
+        <item name="rippleOverlay">false</item>
+        <item name="rippleFadeDuration">0</item>-->
+    </style>
+    <style name="InfoOptionArrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:src">@drawable/context_go</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <!--<item name="android:background">@color/transparent</item>-->
+    </style>
+
+    <style name="InfoOptionText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+    <style name="MainButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">#80C8FE</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_big</item>
+    </style>
+
+    <style name="InfoOptionIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
     </style>
 
 </resources>

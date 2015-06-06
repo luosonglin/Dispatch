@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- grayscale -->
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#DBDBDB</color>
+
+
+    <!-- basic colors -->
+    <color name="green">#27D34D</color>
+    <color name="blue">#2A91BD</color>
+    <color name="orange">#FF9D2F</color>
+
+
+    <color name="background">#f8f8f8</color>
+    <color name="highlight">#1e1e20</color>
+    <color name="dark_grey">#595959</color>
+    <color name="light_grey">#7d7d7d</color>
+    <color name="red">#ff3253</color>
+    <color name="functional">#2f8bf7</color>
+    <color name="ripple">#999999</color>
+
+    <color name="dark_red">#d51007</color>
+    <color name="gray">#e6e9ee</color>
+    <color name="middle_grey">#f4f5f5</color>
+    <color name="light_gray">#eaebf0</color>
+
+    <color name="search_text">#9f9fa4</color>
+    <color name="black">#00000000</color>
+    <!--8位的颜色代码-->
+    <!-- ARGB：是32位的颜色值。高八位为A，次八位为R，再次八位为G，最后八位为B。ARGB颜色与传统RGB颜色相比增加了Alpha值，Alpha值用来表示透明度。-->
+    <color name="black1">#1e1e20</color>
+    <color name="light_black">#575759</color>
+
+    <color name="text_black">#595959</color>
+
+    <color name="border">#d6d7dc</color>
+
+
+    <color name="catalog_black">#33373b</color>
+    <color name="catalog_dark">#2b2f33</color>
+    <color name="catalog_darker">#272a2d</color>
+
+    <color name="catalog_grey">#919ba6</color>
+    <color name="catalog_grey_light">#beccd9</color>
+
+    <color name="hint">#80FFFFFF</color>
+
+    <color name="sidetextcolor">#136aff</color>
+
+    <color name="unenable">#b1b1b1</color>
+
+<color name="transparent">#00FFFFFF</color>
+
+
+</resources>
