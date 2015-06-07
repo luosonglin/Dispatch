@@ -19,7 +19,17 @@
         <item name="android:layout_alignParentRight">true</item>
         <!--<item name="android:background">@color/transparent</item>-->
     </style>
-
+    <style name="InfoOptionRightText" parent="InfoOptionText">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <style name="MainText">
+        <item name="android:textColor">@color/black1</item>
+        <item name="android:textSize">@dimen/font_big</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
     <style name="InfoOptionText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

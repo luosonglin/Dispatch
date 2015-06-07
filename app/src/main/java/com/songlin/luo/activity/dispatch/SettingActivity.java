@@ -1,18 +1,25 @@
 package com.songlin.luo.activity.dispatch;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.Window;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.songlin.luo.fragment.UpdateVersionFragment;
 import com.songlin.luo.ui.material.ripple.MaterialRippleLayout;
 
 /**
  * Created by luosonglin on 15/6/5.
  */
-public class SettingActivity extends Activity implements View.OnClickListener, View.OnLongClickListener {
+public class SettingActivity extends FragmentActivity implements View.OnClickListener, View.OnLongClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +41,77 @@ public class SettingActivity extends Activity implements View.OnClickListener, V
 
         view.setOnLongClickListener(this);
         view.setOnClickListener(this);
+
+        TextView textView = (TextView)findViewById(R.id.accout_name);
+        textView.setText("罗崧麟");
+
+        findViewById(R.id.change_password).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent change=new Intent();
+                change.setClass(SettingActivity.this,ChangePasswordActivity.class);
+                startActivity(change);
+            }
+        });
+        findViewById(R.id.update).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction()
+                        .add(R.id.update, new UpdateVersionFragment())
+                        .commit();
+            }
+        });
+        findViewById(R.id.clean).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent clean=new Intent(SettingActivity.this,CleanActivity.class);
+                startActivity(clean);
+            }
+        });
+        findViewById(R.id.feedback).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent feedback=new Intent(SettingActivity.this,FeedbackActivity.class);
+                startActivity(feedback);
+            }
+        });
+        findViewById(R.id.call).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new AlertDialog.Builder(SettingActivity.this)
+                        .setTitle("联系作者")
+                        .setIcon(R.drawable.context_call)
+                        .setMessage("确定拨打作者电话吗？")
+                        .setNegativeButton("取消", null)
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int i) {
+                                try {
+                                    String phonenumber = "18817802295";
+                                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phonenumber));
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }catch (Exception e){
+                                    System.out.println(e.getStackTrace());
+                                }
+                            }
+                        })
+                        .show();
+            }
+        });
+        findViewById(R.id.about).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent about=new Intent(SettingActivity.this,AboutActivity.class);
+                startActivity(about);
+            }
+        });
+        findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // Toast.makeText(this, "Short click", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override public void onClick(View v) {

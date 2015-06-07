@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#fff"
@@ -136,7 +137,7 @@
         <View
             android:background="@color/background"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="10dp"
             />
         <View
             android:layout_width="match_parent"
@@ -214,6 +215,68 @@
             android:layout_height="@dimen/dividerline_width"
             android:layout_marginLeft="16dp"
             android:background="@color/border" />
+        <View
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+            style="@style/Ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/feedbackimage"
+                    style="@style/InfoOptionIcon"
+                    android:src="@drawable/context_feedback" />
+
+                <TextView
+                    style="@style/InfoOptionText"
+                    android:layout_toRightOf="@+id/feedbackimage"
+                    android:text="@string/feedback" />
+
+                <ImageButton
+                    style="@style/InfoOptionArrow"
+                    android:background="@color/transparent" />
+            </RelativeLayout>
+        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+
+        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+            style="@style/Ripple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/call_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/call"
+                    style="@style/InfoOptionIcon"
+                    android:src="@drawable/context_call"
+                    />
+
+                <TextView
+                    style="@style/InfoOptionText"
+                    android:layout_toEndOf="@+id/call"
+                    android:layout_toRightOf="@+id/call"
+                    android:text="@string/call"/>
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_alignParentRight="true"
+                    style="@style/InfoOptionRightText"
+                    tools:text="1881780"/>
+            </RelativeLayout>
+        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
 
         <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
@@ -234,7 +297,7 @@
                 <TextView
                     style="@style/InfoOptionText"
                     android:layout_toRightOf="@+id/aboutlogo"
-                    android:text="@string/about_zhaime" />
+                    android:text="@string/about_dispatch" />
 
                 <ImageButton
                     style="@style/InfoOptionArrow"
@@ -246,6 +309,7 @@
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="@color/border" />
+
     </LinearLayout>
 
     <Button
