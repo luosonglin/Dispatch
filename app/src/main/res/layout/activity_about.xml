@@ -9,4 +9,33 @@
         android:id="@+id/toolbar"
         layout="@layout/home_title_layout_common"/>
 
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black1"
+        android:text="移动派工项目技术开发合同"/>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black1"
+        android:text="法定代表人: 罗XX"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/content_about"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        style="@style/MainText"
+        android:gravity="top"
+        android:padding="8dp"
+        android:background="@drawable/feedback_background"
+        android:layout_margin="16dp"
+        android:singleLine="false"
+        android:text="请输入信息"/>
+    </ScrollView>
 </LinearLayout>

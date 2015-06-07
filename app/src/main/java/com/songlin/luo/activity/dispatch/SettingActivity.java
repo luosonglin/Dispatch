@@ -43,7 +43,7 @@ public class SettingActivity extends FragmentActivity implements View.OnClickLis
         view.setOnClickListener(this);
 
         TextView textView = (TextView)findViewById(R.id.accout_name);
-        textView.setText("罗崧麟");
+        textView.setText("罗 X X");
 
         findViewById(R.id.change_password).setOnClickListener(new View.OnClickListener() {
             @Override
