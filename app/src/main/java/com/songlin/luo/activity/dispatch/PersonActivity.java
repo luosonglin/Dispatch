@@ -72,6 +72,7 @@ public class PersonActivity extends Activity implements
             intent.setClass(PersonActivity.this, MenuActivity.class);
             intent.putExtra("clickble", true);
             startActivity(intent);
+            PersonActivity.this.finish();
         }
     };
     private OnClickListener clickListener_style = new OnClickListener() {
@@ -88,6 +89,7 @@ public class PersonActivity extends Activity implements
             intent.setClass(PersonActivity.this,OrderActivity.class);
             intent.putExtra("clickble", true);
             startActivity(intent);
+            PersonActivity.this.finish();
         }
     };
     private OnClickListener clickListener_cam = new OnClickListener() {

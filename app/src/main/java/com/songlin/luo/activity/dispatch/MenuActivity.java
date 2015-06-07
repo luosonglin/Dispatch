@@ -177,6 +177,7 @@ public class MenuActivity extends Activity implements OnGestureListener,
             intent.setClass(MenuActivity.this,OrderActivity.class);
             intent.putExtra("clickble", true);
             startActivity(intent);
+            MenuActivity.this.finish();
         }
     };
     private OnClickListener clickListener_cam = new OnClickListener() {
@@ -212,7 +213,6 @@ public class MenuActivity extends Activity implements OnGestureListener,
     };
 
     private OnClickListener clickListener_show = new OnClickListener() {
-
         @Override
         public void onClick(View v) {
             home_img_bn_Layout.setSelected(false);
@@ -225,6 +225,7 @@ public class MenuActivity extends Activity implements OnGestureListener,
             intent.setClass(MenuActivity.this, PersonActivity.class);
             intent.putExtra("clickble", true);
             startActivity(intent);
+            MenuActivity.this.finish();
         }
     };
 

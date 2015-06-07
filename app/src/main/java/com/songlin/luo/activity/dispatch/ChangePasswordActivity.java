@@ -23,6 +23,7 @@ public class ChangePasswordActivity extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(ChangePasswordActivity.this,SettingActivity.class);
                 startActivity(intent);
+                ChangePasswordActivity.this.finish();
             }
         });
     }

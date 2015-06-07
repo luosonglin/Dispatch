@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
             @Override
             public void run() {
                 startActivity(intent1);
+                MainActivity.this.finish();
             }
         };
         timer.schedule(task, 1000 * 1);

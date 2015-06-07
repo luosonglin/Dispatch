@@ -41,7 +41,7 @@ public class CleanActivity extends Activity {
                     public void run() {
                         Intent intent = new Intent(CleanActivity.this,SettingActivity.class);
                         startActivity(intent);
-
+                        CleanActivity.this.finish();
                     }
                 };
                 timer.schedule(task, 2300 * 1);

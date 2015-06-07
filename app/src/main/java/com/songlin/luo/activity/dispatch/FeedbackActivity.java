@@ -22,6 +22,7 @@ public class FeedbackActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(FeedbackActivity.this,SettingActivity.class);
                 startActivity(intent);
+                FeedbackActivity.this.finish();
             }
         });
     }

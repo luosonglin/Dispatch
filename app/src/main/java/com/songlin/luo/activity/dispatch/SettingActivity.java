@@ -12,8 +12,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.songlin.luo.fragment.UpdateVersionFragment;
 import com.songlin.luo.ui.material.ripple.MaterialRippleLayout;
 
 /**
@@ -28,7 +26,7 @@ public class SettingActivity extends FragmentActivity implements View.OnClickLis
         setContentView(R.layout.activity_setting);
 
         // xml initialization
-        findViewById(R.id.upload_head).setOnClickListener(this);
+        //findViewById(R.id.upload_head).setOnClickListener(this);
         findViewById(R.id.upload_head).setOnLongClickListener(this);
 
         // static initialization
@@ -51,21 +49,17 @@ public class SettingActivity extends FragmentActivity implements View.OnClickLis
                 Intent change=new Intent();
                 change.setClass(SettingActivity.this,ChangePasswordActivity.class);
                 startActivity(change);
+
             }
         });
-        findViewById(R.id.update).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction()
-                        .add(R.id.update, new UpdateVersionFragment())
-                        .commit();
-            }
-        });
+
+        findViewById(R.id.update).setOnClickListener(this);
         findViewById(R.id.clean).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent clean=new Intent(SettingActivity.this,CleanActivity.class);
                 startActivity(clean);
+
             }
         });
         findViewById(R.id.feedback).setOnClickListener(new View.OnClickListener() {
@@ -73,6 +67,7 @@ public class SettingActivity extends FragmentActivity implements View.OnClickLis
             public void onClick(View v) {
                 Intent feedback=new Intent(SettingActivity.this,FeedbackActivity.class);
                 startActivity(feedback);
+
             }
         });
         findViewById(R.id.call_wrap).setOnClickListener(new View.OnClickListener() {
@@ -104,18 +99,21 @@ public class SettingActivity extends FragmentActivity implements View.OnClickLis
             public void onClick(View v) {
                 Intent about=new Intent(SettingActivity.this,AboutActivity.class);
                 startActivity(about);
+
             }
         });
         findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                // Toast.makeText(this, "Short click", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
 
     @Override public void onClick(View v) {
-        Toast.makeText(this, "Short click", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "当前版本已是最新版本...   \n" +
+                "升级版仍在开发中，请耐心等待...", Toast.LENGTH_SHORT).show();
     }
 
     @Override public boolean onLongClick(View v) {

@@ -15,12 +15,12 @@ import com.songlin.luo.ui.GalleryView;
 
 public class OrderCSideActivity extends Activity {
 
-    private TextView tvTitle;
+    /*private TextView tvTitle;
     private GalleryView gallery;
     private ImageAdapter adapter;
     private LinearLayout orderLayout;
     private String[] title = new String[]{
-            "凭证1", "凭证2", "凭证3", "凭证4", "凭证5"};
+            "凭证1", "凭证2", "凭证3", "凭证4", "凭证5"};*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
