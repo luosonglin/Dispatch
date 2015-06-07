@@ -1,5 +1,6 @@
 package com.songlin.luo.activity.dispatch;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -16,12 +17,12 @@ import java.util.TimerTask;
 /**
  * Created by luosonglin on 15/6/6.
  */
-public class CleanActivity extends ActionBarActivity {
+public class CleanActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_clean);
 
         initView();
@@ -38,7 +39,8 @@ public class CleanActivity extends ActionBarActivity {
                 TimerTask task = new TimerTask() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(CleanActivity.this,AboutActivity.class);
+                        Intent intent = new Intent(CleanActivity.this,About
+                                Activity.class);
                         startActivity(intent);
 
                     }
@@ -95,29 +97,5 @@ public class CleanActivity extends ActionBarActivity {
         cleanInternalCache(context);
         cleanSharedPreference(context);
         cleanFiles(context);
-    }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_clean, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
