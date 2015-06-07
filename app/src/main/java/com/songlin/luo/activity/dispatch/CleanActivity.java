@@ -39,8 +39,7 @@ public class CleanActivity extends Activity {
                 TimerTask task = new TimerTask() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(CleanActivity.this,About
-                                Activity.class);
+                        Intent intent = new Intent(CleanActivity.this,SettingActivity.class);
                         startActivity(intent);
 
                     }
