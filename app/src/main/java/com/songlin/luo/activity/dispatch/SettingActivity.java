@@ -75,7 +75,7 @@ public class SettingActivity extends FragmentActivity implements View.OnClickLis
                 startActivity(feedback);
             }
         });
-        findViewById(R.id.call).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.call_wrap).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 new AlertDialog.Builder(SettingActivity.this)
