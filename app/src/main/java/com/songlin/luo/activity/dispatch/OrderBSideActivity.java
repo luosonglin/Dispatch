@@ -23,9 +23,9 @@ public class OrderBSideActivity extends Activity {
     }
     public void initView(){
         orderLayout = (LinearLayout)findViewById(R.id.order_layout);
-        int ii=orderLayout.getChildCount();
+        /*int ii=orderLayout.getChildCount();
         String a=Integer.toString(ii);
-        Toast.makeText(OrderBSideActivity.this,a, Toast.LENGTH_LONG).show();
+        Toast.makeText(OrderBSideActivity.this,a, Toast.LENGTH_LONG).show();*/
         for (int i = 0; i < orderLayout.getChildCount(); i++) {
             View view = orderLayout.getChildAt(i);
             TextView title1 = (TextView) view.findViewById(R.id.order_detail_left);

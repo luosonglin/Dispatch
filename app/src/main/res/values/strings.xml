@@ -59,5 +59,8 @@
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_feedback">FeedbackActivity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_new_list">NewListActivity</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+    <string name="title_activity_test">testActivity</string>
 
 </resources>

@@ -2,7 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.songlin.luo.activity.dispatch" >
 
+    <!--
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
         android:allowBackup="true"
@@ -65,6 +83,30 @@
         <activity
             android:name=".FeedbackActivity"
             android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".NewListActivity"
+            android:label="@string/title_activity_new_list" >
+        </activity>
+        <activity
+            android:name=".NewsDetailActivity"
+            android:label="@string/title_activity_news_detail" >
+        </activity>
+        <activity
+            android:name=".CreateUserActivity"
+            android:label="CreateUserActivity" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="LoginActivity" >
+        </activity>
+        <activity
+            android:name=".UserInfoActivity"
+            android:label="UserInfoActivity" >
+        </activity>
+        <activity
+            android:name=".testActivity"
+            android:label="@string/title_activity_test" >
         </activity>
     </application>
 

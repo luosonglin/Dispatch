@@ -77,9 +77,10 @@
                         android:layout_marginTop="4dp"
                         android:singleLine="true"
                         android:ellipsize="end"
-                        android:text="@string/user_post"
+                        android:text="派工科技有限公司创始人兼CPO"
                         android:textSize="12sp"
                         android:textColor="#A1A1A1" />
+                    <!--@string/user_post-->
 
                     <TextView
                         android:id="@+id/user_book"
@@ -103,8 +104,8 @@
                     android:background="@android:color/white"
                     android:layout_marginLeft="21dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/avatar_default" />
-
+                    android:src="@drawable/lijing2" />
+                <!--avatar_default-->
                 <TextView
                     android:id="@+id/user_name"
                     android:layout_width="wrap_content"
@@ -117,10 +118,10 @@
                     android:shadowDx="3.0"
                     android:shadowDy="3.0"
                     android:shadowRadius="5.0"
-                    android:text="@string/user_name"
+                    android:text="贺世节"
                     android:textSize="20sp"
                     android:textColor="@android:color/white" />
-
+                <!--@string/user_name-->
                 <FrameLayout
                     android:id="@+id/user_divider_layout"
                     android:layout_width="match_parent"

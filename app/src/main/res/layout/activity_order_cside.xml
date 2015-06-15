@@ -16,117 +16,118 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="180dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:id="@+id/imageView"
-            android:layout_gravity="left"
-            android:src="@drawable/ic_launcher"/>
-        <View
-            android:layout_width="5dp"
-            android:layout_height="fill_parent"
-            android:layout_marginTop="1dp"
-            android:background="#D7D6DC" />
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:id="@+id/imageView2"
-            android:layout_gravity="right"
-            android:src="@drawable/ic_launcher"/>
-    </LinearLayout>
-
-    <View
-        android:layout_width="365dp"
-        android:layout_height="5dp"
-        android:layout_marginTop="1dp"
-        android:background="#D7D6DC" />
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="180dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:id="@+id/imageView3"
-            android:layout_gravity="left"
-            android:src="@drawable/ic_launcher"/>
-        <View
-            android:layout_width="5dp"
-            android:layout_height="fill_parent"
-            android:layout_marginTop="1dp"
-            android:background="#D7D6DC" />
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:id="@+id/imageView4"
-            android:layout_gravity="right"
-            android:src="@drawable/ic_launcher"/>
-    </LinearLayout>
-
-    <View
-        android:layout_width="365dp"
-        android:layout_height="5dp"
-        android:layout_marginTop="1dp"
-        android:background="#D7D6DC" />
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="180dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:id="@+id/imageView5"
-            android:layout_gravity="left"
-            android:src="@drawable/ic_launcher"/>
-        <View
-            android:layout_width="5dp"
-            android:layout_height="fill_parent"
-            android:layout_marginTop="1dp"
-            android:background="#D7D6DC" />
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:id="@+id/imageView6"
-            android:layout_gravity="right"
-            android:src="@drawable/ic_launcher"/>
-    </LinearLayout>
-
-        <View
-            android:layout_width="365dp"
-            android:layout_height="5dp"
-            android:layout_marginTop="1dp"
-            android:background="#D7D6DC" />
-
-        <LinearLayout
-            android:layout_width="365dp"
-            android:layout_height="180dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="180dp"
+            <LinearLayout
+                android:layout_width="365dp"
                 android:layout_height="180dp"
-                android:id="@+id/imageView7"
-                android:layout_gravity="left"
-                android:src="@drawable/ic_launcher"/>
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="left"
+                    android:src="@drawable/add"/>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="#D7D6DC" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_launcher"/>
+            </LinearLayout>
+
             <View
-                android:layout_width="5dp"
-                android:layout_height="fill_parent"
+                android:layout_width="365dp"
+                android:layout_height="5dp"
                 android:layout_marginTop="1dp"
                 android:background="#D7D6DC" />
-            <ImageView
-                android:layout_width="180dp"
+
+            <LinearLayout
+                android:layout_width="365dp"
                 android:layout_height="180dp"
-                android:id="@+id/imageView8"
-                android:layout_gravity="right"
-                android:src="@drawable/ic_launcher"/>
-        </LinearLayout>
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ic_launcher"/>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="#D7D6DC" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView4"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_launcher"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="365dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="1dp"
+                android:background="#D7D6DC" />
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView5"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ic_launcher"/>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="#D7D6DC" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView6"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_launcher"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="365dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="1dp"
+                android:background="#D7D6DC" />
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView7"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ic_launcher"/>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="#D7D6DC" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:id="@+id/imageView8"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_launcher"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
     <!--    <com.songlin.luo.ui.GalleryView
             android:id="@+id/mygallery"
             android:spacing="20dp"

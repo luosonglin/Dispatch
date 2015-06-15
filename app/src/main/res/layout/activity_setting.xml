@@ -48,6 +48,7 @@
                     android:text="@string/head" />
 
                 <ImageView
+                    android:id="@+id/avatar_default"
                     android:src="@drawable/avatar_default"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
