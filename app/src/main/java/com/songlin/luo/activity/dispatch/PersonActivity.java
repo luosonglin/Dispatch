@@ -189,6 +189,9 @@ public class PersonActivity extends Activity implements
            /* Intent i =new Intent();
             i.setClass(PersonActivity.this, map.class);
             startActivity(i);*/
+            Intent i =new Intent();
+            i.setClass(PersonActivity.this, AddOrderActivity.class);
+            startActivity(i);
         }
     };
     @Override

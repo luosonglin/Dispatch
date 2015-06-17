@@ -40,7 +40,7 @@ import android.widget.Toast;
 
 public class CreateUserActivity extends Activity implements OnClickListener {
 	
-	public static final String CREATE_ACCOUNT_URL = "http://192.168.1.3:8080/androidWeb/servlet/NewAccount";
+	public static final String CREATE_ACCOUNT_URL = "http://172.17.212.2:8080/androidWeb/servlet/NewAccount";
 	public static final int MSG_CREATE_RESULT = 1;
 
 	private EditText eUsername;

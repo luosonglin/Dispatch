@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Intent intent1 = new Intent(this,MenuActivity.class);
+        final Intent intent1 = new Intent(this,LoginActivity.class);
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
             @Override

@@ -25,7 +25,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView"
                     android:layout_gravity="left"
-                    android:src="@drawable/add"/>
+                    android:src="@drawable/pic_8"/>
                 <View
                     android:layout_width="5dp"
                     android:layout_height="fill_parent"
@@ -36,7 +36,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView2"
                     android:layout_gravity="right"
-                    android:src="@drawable/ic_launcher"/>
+                    android:src="@drawable/pic_1"/>
             </LinearLayout>
 
             <View
@@ -54,7 +54,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView3"
                     android:layout_gravity="left"
-                    android:src="@drawable/ic_launcher"/>
+                    android:src="@drawable/pic_2"/>
                 <View
                     android:layout_width="5dp"
                     android:layout_height="fill_parent"
@@ -65,7 +65,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView4"
                     android:layout_gravity="right"
-                    android:src="@drawable/ic_launcher"/>
+                    android:src="@drawable/pic_3"/>
             </LinearLayout>
 
             <View
@@ -83,7 +83,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView5"
                     android:layout_gravity="left"
-                    android:src="@drawable/ic_launcher"/>
+                    android:src="@drawable/pic_4"/>
                 <View
                     android:layout_width="5dp"
                     android:layout_height="fill_parent"
@@ -94,7 +94,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView6"
                     android:layout_gravity="right"
-                    android:src="@drawable/ic_launcher"/>
+                    android:src="@drawable/pic_5"/>
             </LinearLayout>
 
             <View
@@ -112,7 +112,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView7"
                     android:layout_gravity="left"
-                    android:src="@drawable/ic_launcher"/>
+                    android:src="@drawable/pic_6"/>
                 <View
                     android:layout_width="5dp"
                     android:layout_height="fill_parent"
@@ -123,7 +123,7 @@
                     android:layout_height="180dp"
                     android:id="@+id/imageView8"
                     android:layout_gravity="right"
-                    android:src="@drawable/ic_launcher"/>
+                    android:src="@drawable/pic_7"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

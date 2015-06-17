@@ -108,6 +108,10 @@
             android:name=".testActivity"
             android:label="@string/title_activity_test" >
         </activity>
+        <activity
+            android:name=".AddOrderActivity"
+            android:label="@string/title_activity_add_order" >
+        </activity>
     </application>
 
 </manifest>

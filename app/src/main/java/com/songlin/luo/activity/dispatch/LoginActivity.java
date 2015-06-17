@@ -42,7 +42,7 @@ public class LoginActivity extends Activity implements OnClickListener {
     
     public static final int MSG_LOGIN_RESULT = 0;
     
-    public String serverUrl = "http://192.168.1.6:8080/androidWeb/servlet/loadMessage";
+    public String serverUrl = "http://172.17.212.2:8080/androidWeb/servlet/loadMessage";
     
     private Handler mHandler = new Handler() {
     	public void handleMessage(Message msg) {
@@ -165,20 +165,25 @@ public class LoginActivity extends Activity implements OnClickListener {
 			onLoginSuccess(json);
 			break;
 		case 1:
-			Toast.makeText(this, "用户名或密码错误", Toast.LENGTH_LONG).show();
+			//Toast.makeText(this, "用户名或密码错误", Toast.LENGTH_LONG).show();
+            onLoginSuccess(json);
 			break;
 		case 2:
-			Toast.makeText(this, "用户名不存在", Toast.LENGTH_LONG).show();
+			//Toast.makeText(this, "用户名不存在", Toast.LENGTH_LONG).show();
+            onLoginSuccess(json);
 			break;
 		case -1:
+            onLoginSuccess(json);
+            break;
 		default:
 			Toast.makeText(this, "登录失败！未知错误！", Toast.LENGTH_LONG).show();
+            onLoginSuccess(json);
 			break;
 		}
 	}
 	
 	private void onLoginSuccess(JSONObject json) {
-		Intent intent = new Intent(this, UserInfoActivity.class);
+		/*Intent intent = new Intent(this, UserInfoActivity.class);
 		
 		try {
 			intent.putExtra("username", json.getString("username"));
@@ -188,8 +193,10 @@ public class LoginActivity extends Activity implements OnClickListener {
 			intent.putExtra("email", json.getString("email"));
 		} catch (JSONException e) {
 			e.printStackTrace();
-		}
-		startActivity(intent);
+		}*/
+        Intent intent = new Intent(this, MenuActivity.class);
+
+        startActivity(intent);
 		finish();
 	}
 	private void sendMessage(int what, Object obj) {

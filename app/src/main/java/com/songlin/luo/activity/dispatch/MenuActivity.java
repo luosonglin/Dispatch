@@ -28,6 +28,8 @@ import android.widget.Toast;
 import android.widget.ViewFlipper;
 import com.songlin.luo.ui.MyScrollView;
 
+//import com.umeng.analytics.MobclickAgent;
+
 /**
  * Created by luosonglin on 15/6/1.
  */
@@ -359,9 +361,9 @@ public class MenuActivity extends Activity implements OnGestureListener,
 
     public void list_OnClick_1(View view) {
         toastInfo("点击");
-        Intent intent = new Intent();
-        intent.setClass(MenuActivity.this, testActivity.class); //LoginActivity.class);//NewListActivity.class
-        startActivity(intent);
+        /*Intent intent = new Intent();
+        intent.setClass(MenuActivity.this, NewListActivity.class); //LoginActivity.class);
+        startActivity(intent);*/
     }
 
     @Override
@@ -372,5 +374,18 @@ public class MenuActivity extends Activity implements OnGestureListener,
 
     private void toastInfo(String string) {
         Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+//        itemAdapter.updateStatus();
+        //获取正确的新增用户、活跃用户、启动次数、使用时长等基本数据
+        //MobclickAgent.onPageStart("ConfirmOrderFragment");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+       // MobclickAgent.onPageEnd("ConfirmOrderFragment");
     }
 }

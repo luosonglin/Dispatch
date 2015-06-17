@@ -65,10 +65,10 @@
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
                         android:gravity="center_vertical"
-                        android:text="@string/add_attention"
+                        android:text="订单"
                         android:textSize="13sp"
                         android:textColor="#57AF4E" />
-
+<!--@string/add_attention-->
                     <TextView
                         android:id="@+id/user_post"
                         android:layout_width="wrap_content"
@@ -104,7 +104,7 @@
                     android:background="@android:color/white"
                     android:layout_marginLeft="21dp"
                     android:contentDescription="@null"
-                    android:src="@drawable/lijing2" />
+                    android:src="@drawable/avatar_default" />
                 <!--avatar_default-->
                 <TextView
                     android:id="@+id/user_name"
@@ -118,7 +118,7 @@
                     android:shadowDx="3.0"
                     android:shadowDy="3.0"
                     android:shadowRadius="5.0"
-                    android:text="贺世节"
+                    android:text="罗崧麟"
                     android:textSize="20sp"
                     android:textColor="@android:color/white" />
                 <!--@string/user_name-->
