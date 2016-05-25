@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.songlin.luo.activity.dispatch" >
+    package="com.songlin.dispatch.activity.activities" >
 
     <!--
     <uses-permission android:name="android.permission.CALL_PHONE"/>
@@ -28,7 +28,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,79 +37,79 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MenuActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.MenuActivity"
             android:label="@string/title_activity_menu" >
         </activity>
         <activity
-            android:name=".OrderActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.OrderActivity"
             android:label="@string/title_activity_order" >
         </activity>
         <activity
-            android:name=".PersonActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.PersonActivity"
             android:label="@string/title_activity_person" >
         </activity>
         <activity
-            android:name=".SpecificOrderActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.SpecificOrderActivity"
             android:label="@string/title_activity_specific_order" >
         </activity>
         <activity
-            android:name=".OrderASideActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.OrderASideActivity"
             android:label="@string/title_activity_order_aside" >
         </activity>
         <activity
-            android:name=".OrderBSideActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.OrderBSideActivity"
             android:label="@string/title_activity_order_bside" >
         </activity>
         <activity
-            android:name=".OrderCSideActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.OrderCSideActivity"
             android:label="@string/title_activity_order_cside" >
         </activity>
         <activity
-            android:name=".SettingActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.SettingActivity"
             android:label="@string/title_activity_setting" >
         </activity>
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.ChangePasswordActivity"
             android:label="@string/title_activity_change_password" >
         </activity>
         <activity
-            android:name=".CleanActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.CleanActivity"
             android:label="@string/title_activity_clean" >
         </activity>
         <activity
-            android:name=".AboutActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.AboutActivity"
             android:label="@string/title_activity_about" >
         </activity>
         <activity
-            android:name=".FeedbackActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.FeedbackActivity"
             android:label="@string/title_activity_feedback" >
         </activity>
         <activity
-            android:name=".NewListActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.NewListActivity"
             android:label="@string/title_activity_new_list" >
         </activity>
         <activity
-            android:name=".NewsDetailActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.NewsDetailActivity"
             android:label="@string/title_activity_news_detail" >
         </activity>
         <activity
-            android:name=".CreateUserActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.CreateUserActivity"
             android:label="CreateUserActivity" >
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.LoginActivity"
             android:label="LoginActivity" >
         </activity>
         <activity
-            android:name=".UserInfoActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.UserInfoActivity"
             android:label="UserInfoActivity" >
         </activity>
         <activity
-            android:name=".testActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.testActivity"
             android:label="@string/title_activity_test" >
         </activity>
         <activity
-            android:name=".AddOrderActivity"
+            android:name="com.songlin.dispatch.activitiy_delete.AddOrderActivity"
             android:label="@string/title_activity_add_order" >
         </activity>
     </application>

@@ -26,7 +26,7 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="16dp" />
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
         <View
             android:id="@+id/test"
@@ -65,7 +65,7 @@
             android:layout_marginLeft="16dp"
             android:background="@color/border" />
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                     android:layout_marginRight="16dp"
                     />
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
         <View
             android:layout_width="match_parent"
@@ -104,7 +104,7 @@
             android:layout_marginLeft="16dp"
             android:background="@color/border" />
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                     style="@style/InfoOptionArrow"
                     android:background="@color/transparent" />
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
         <View
             android:layout_width="match_parent"
@@ -145,7 +145,7 @@
             android:layout_height="@dimen/dividerline_width"
             android:background="@color/border" />
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
                     style="@style/InfoOptionArrow"
                     android:background="@color/transparent" />
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
         <View
             android:layout_width="match_parent"
@@ -184,7 +184,7 @@
             android:layout_marginLeft="16dp"
             android:background="@color/border" />
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -209,7 +209,7 @@
                     style="@style/InfoOptionArrow"
                     android:background="@color/transparent" />
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
         <View
             android:layout_width="match_parent"
@@ -221,7 +221,7 @@
             android:layout_width="match_parent"
             android:layout_height="10dp"/>
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -246,9 +246,9 @@
                     style="@style/InfoOptionArrow"
                     android:background="@color/transparent" />
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -277,9 +277,9 @@
                     style="@style/InfoOptionRightText"
                     tools:text="1881780"/>
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
-        <com.songlin.luo.ui.material.ripple.MaterialRippleLayout
+        <com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout
             style="@style/Ripple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -304,7 +304,7 @@
                     style="@style/InfoOptionArrow"
                     android:background="@color/transparent" />
             </RelativeLayout>
-        </com.songlin.luo.ui.material.ripple.MaterialRippleLayout>
+        </com.songlin.dispatch.widget.material.ripple.MaterialRippleLayout>
 
         <View
             android:layout_width="match_parent"

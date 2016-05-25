@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.songlin.luo.activity.dispatch.MenuActivity">
+    tools:context="com.songlin.dispatch.activitiy_delete.MenuActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         >
         <include layout="@layout/home_footbar_layout"></include>
     </LinearLayout>
-    <com.songlin.luo.ui.MyScrollView
+    <com.songlin.dispatch.widget.MyScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/viewflipper_scrollview"
@@ -95,6 +95,6 @@
 
         </RelativeLayout>
 
-    </com.songlin.luo.ui.MyScrollView>
+    </com.songlin.dispatch.widget.MyScrollView>
 
 </RelativeLayout>
