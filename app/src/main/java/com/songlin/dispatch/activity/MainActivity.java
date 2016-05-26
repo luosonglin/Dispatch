@@ -66,14 +66,6 @@ public class MainActivity extends AppCompatActivity
 
         setUpBottomNavigationBar();
 
-
-        //TODO 动态设置tab数量
-//        findViewById(R.id.addTab).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                bottomLayout.addTab(R.drawable.selector_movie, "Movies & Tv", 0xff4a5965);
-//            }
-//        });
     }
 
     public void setUpBottomNavigationBar() {
