@@ -63,5 +63,6 @@
     <string name="title_activity_news_detail">NewsDetailActivity</string>
     <string name="title_activity_test">testActivity</string>
     <string name="title_activity_add_order">AddOrderActivity</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

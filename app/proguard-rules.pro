@@ -15,3 +15,8 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+# If you use proguard, add the following to your proguard rules
+-keepclassmembers class * extends com.stephentuso.welcome.ui.WelcomeActivity {
+    public static java.lang.String welcomeKey();
+}

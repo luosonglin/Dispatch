@@ -5,11 +5,13 @@
         <item name="colorPrimary">@color/button_material_dark</item>
         <item name="colorAccent">@color/button_material_light</item>
     </style>
+
     <style name="Ripple"><!--
         <item name="rippleColor">@color/ripple</item>
         <item name="rippleOverlay">false</item>
         <item name="rippleFadeDuration">0</item>-->
     </style>
+
     <style name="InfoOptionArrow">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -19,10 +21,12 @@
         <item name="android:layout_alignParentRight">true</item>
         <!--<item name="android:background">@color/transparent</item>-->
     </style>
+
     <style name="InfoOptionRightText" parent="InfoOptionText">
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">15dp</item>
     </style>
+
     <style name="MainText">
         <item name="android:textColor">@color/black1</item>
         <item name="android:textSize">@dimen/font_big</item>
@@ -30,6 +34,7 @@
         <item name="android:layout_marginRight">16dp</item>
         <item name="android:layout_marginTop">10dp</item>
     </style>
+
     <style name="InfoOptionText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -39,6 +44,7 @@
         <item name="android:textSize">18sp</item>
         <item name="android:layout_marginBottom">12dp</item>
     </style>
+
     <style name="MainButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -60,4 +66,25 @@
         <item name="android:layout_marginBottom">12dp</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomWelcomeScreenTheme" parent="WelcomeScreenTheme">
+        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator.Custom</item>
+        <item name="welcomeTitleTextStyle">@style/WelcomeScreenText.Title.Centered</item>
+    </style>
+
+    <style name="WelcomeScreenPageIndicator.Custom">
+        <item name="animated">true</item>
+    </style>
+
+    <style name="WelcomeScreenText.Title.Centered.Custom">
+        <item name="android:textSize">30sp</item>
+    </style>
 </resources>
