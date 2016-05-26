@@ -88,7 +88,7 @@ public class LaunchScreenActivity extends AppCompatActivity {
                 intent.setClass(LaunchScreenActivity.this, LoginActivity.class);
                 Tip = NOTLOGIN;
             } else if (AccountUtils.getAccessToken(LaunchScreenActivity.this) != null) {
-                intent.setClass(LaunchScreenActivity.this, MainActivity.class);
+                intent.setClass(LaunchScreenActivity.this, LoginActivity.class);//MainActivity
                 Tip = SUCCESS;
             }
 
