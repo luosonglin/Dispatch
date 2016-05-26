@@ -5,6 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
@@ -16,15 +17,38 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
+
 import com.songlin.dispatch.activity.activities.R;
+import com.songlin.dispatch.fragment.BooksFragment;
+import com.songlin.dispatch.fragment.MoviesFragment;
+import com.songlin.dispatch.fragment.MusicFragment;
+import com.songlin.dispatch.fragment.NewsstandFragment;
+
+import etong.bottomnavigation.lib.BottomBarTab;
+import etong.bottomnavigation.lib.BottomNavigationBar;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private BottomNavigationBar bottomLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window window = getWindow();
+            // Translucent status bar
+            window.setFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            // Translucent navigation bar
+            window.setFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -37,6 +61,59 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, MoviesFragment.newInstance()).commitAllowingStateLoss();
+
+        setUpBottomNavigationBar();
+
+
+        //TODO 动态设置tab数量
+//        findViewById(R.id.addTab).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                bottomLayout.addTab(R.drawable.selector_movie, "Movies & Tv", 0xff4a5965);
+//            }
+//        });
+    }
+
+    public void setUpBottomNavigationBar() {
+
+        bottomLayout = (BottomNavigationBar) findViewById(R.id.bottomLayout);
+        bottomLayout.setTabWidthSelectedScale(1.5f);
+        bottomLayout.setTextDefaultVisible(false);
+//        bottomLayout.setTextColorResId(R.color.color_tab_text);
+        bottomLayout.addTab(R.drawable.selector_movie, "Movies & Tv", 0xff4a5965);
+        bottomLayout.addTab(R.drawable.selector_music, "Music", 0xff096c54);
+        bottomLayout.addTab(R.drawable.selector_books, "Books", 0xff8a6a64);
+        bottomLayout.addTab(R.drawable.selector_news, "Newsstand", 0xff553b36);
+        bottomLayout.setOnTabListener(new BottomNavigationBar.TabListener() {
+            @Override
+            public void onSelected(BottomBarTab tab, int position) {
+                Fragment fragment = null;
+                switch (position) {
+                    case 0:
+                        fragment = MoviesFragment.newInstance();
+                        break;
+                    case 1:
+                        fragment = MusicFragment.newInstance();
+                        break;
+                    case 2:
+                        fragment = BooksFragment.newInstance();
+                        break;
+                    case 3:
+                        fragment = NewsstandFragment.newInstance();
+                        break;
+                    default:
+                        fragment = MoviesFragment.newInstance();
+                        break;
+                }
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.container, fragment)
+//                        .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+                        .commitAllowingStateLoss();
+            }
+        });
     }
 
     @Override
