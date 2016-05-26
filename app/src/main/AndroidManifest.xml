@@ -28,7 +28,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name="com.songlin.dispatch.activity.LaunchScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +40,11 @@
         <activity
             android:name="com.songlin.dispatch.widget.GuideWelcomeActivity"
             android:theme="@style/WelcomeScreenTheme" />
-        <activity android:name="com.songlin.dispatch.activity.SignupActivity"></activity>
+        <activity android:name="com.songlin.dispatch.activity.SignupActivity" />
+        <activity
+            android:name="com.songlin.dispatch.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

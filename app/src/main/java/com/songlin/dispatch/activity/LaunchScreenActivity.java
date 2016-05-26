@@ -82,13 +82,13 @@ public class LaunchScreenActivity extends AppCompatActivity {
             String Tip = "";
             SharedPreferences sharedPreferences = getSharedPreferences("firstOpen", MODE_PRIVATE);
             if (sharedPreferences.getBoolean("firstOpen", true)) {
-                intent.setClass(LaunchScreenActivity.this, LoginActivity.class);//GuidePageActivity
+                intent.setClass(LaunchScreenActivity.this, MainActivity.class);//GuidePageActivity
                 Tip = FIRSTOPEN;
             } else if (AccountUtils.getAccessToken(LaunchScreenActivity.this) == null) {
                 intent.setClass(LaunchScreenActivity.this, LoginActivity.class);
                 Tip = NOTLOGIN;
             } else if (AccountUtils.getAccessToken(LaunchScreenActivity.this) != null) {
-                intent.setClass(LaunchScreenActivity.this, LoginActivity.class);//MainActivity
+                intent.setClass(LaunchScreenActivity.this, MainActivity.class);
                 Tip = SUCCESS;
             }
 

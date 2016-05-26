@@ -3,7 +3,7 @@
 
     <string name="app_name">移动派工</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">设置</string>
     <string name="luo">luosonglin</string>
     <string name="next">next</string>
     <string name="home_tv">资讯</string>
@@ -64,5 +64,8 @@
     <string name="title_activity_test">testActivity</string>
     <string name="title_activity_add_order">AddOrderActivity</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>
