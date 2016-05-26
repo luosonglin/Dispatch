@@ -96,15 +96,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.songlin.dispatch.activity.GuidePageActivity"/>
+        <activity android:name="com.songlin.dispatch.activity.GuidePageActivity" />
         <activity android:name="com.songlin.dispatch.activity.LoginActivity" />
         <activity
             android:name="com.songlin.dispatch.activity.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.songlin.dispatch.widget.GuideWelcomeActivity"
-            android:theme="@style/WelcomeScreenTheme" ></activity>
+        <activity
+            android:name="com.songlin.dispatch.widget.GuideWelcomeActivity"
+            android:theme="@style/WelcomeScreenTheme" />
+        <activity android:name="com.songlin.dispatch.activity.SignupActivity"></activity>
     </application>
 
 </manifest>

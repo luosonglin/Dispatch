@@ -87,4 +87,10 @@
     <style name="WelcomeScreenText.Title.Centered.Custom">
         <item name="android:textSize">30sp</item>
     </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/blue_background</item>
+    </style>
 </resources>
