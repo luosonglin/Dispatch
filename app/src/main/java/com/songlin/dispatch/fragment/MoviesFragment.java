@@ -42,16 +42,16 @@ public class MoviesFragment extends Fragment implements BaseSliderView.OnSliderC
         mDemoSlider = (SliderLayout)view.findViewById(R.id.slider);
 
         HashMap<String,String> url_maps = new HashMap<String, String>();
-        url_maps.put("Hannibal", "http://static2.hypable.com/wp-content/uploads/2013/12/hannibal-season-2-release-date.jpg");
-        url_maps.put("Big Bang Theory", "http://tvfiles.alphacoders.com/100/hdclearart-10.png");
-        url_maps.put("House of Cards", "http://cdn3.nflximg.net/images/3093/2043093.jpg");
-        url_maps.put("Game of Thrones", "http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
+        url_maps.put("版权所有", "http://static2.hypable.com/wp-content/uploads/2013/12/hannibal-season-2-release-date.jpg");
+        url_maps.put("RFID", "http://tvfiles.alphacoders.com/100/hdclearart-10.png");
+        url_maps.put("覆盖面积", "http://cdn3.nflximg.net/images/3093/2043093.jpg");
+        url_maps.put("精准定位", "http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Hannibal",R.drawable.default_pic_1);
-        file_maps.put("Big Bang Theory",R.drawable.default_pic_2);
-        file_maps.put("House of Cards",R.drawable.default_pic_3);
-        file_maps.put("Game of Thrones", R.drawable.default_pic_4);
+        file_maps.put("版权所有",R.drawable.default_pic_1);
+        file_maps.put("覆盖面积",R.drawable.default_pic_2);
+        file_maps.put("精准定位",R.drawable.default_pic_3);
+        file_maps.put("RFID", R.drawable.default_pic_4);
 
         for(String name : file_maps.keySet()){
             TextSliderView textSliderView = new TextSliderView(getActivity());
