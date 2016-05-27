@@ -75,10 +75,10 @@ public class MainActivity extends AppCompatActivity
         bottomLayout.setTabWidthSelectedScale(1.5f);
         bottomLayout.setTextDefaultVisible(false);
 //        bottomLayout.setTextColorResId(R.color.color_tab_text);
-        bottomLayout.addTab(R.drawable.selector_movie, "Movies & Tv", 0xff4a5965);
-        bottomLayout.addTab(R.drawable.selector_music, "Music", 0xff096c54);
-        bottomLayout.addTab(R.drawable.selector_books, "Books", 0xff8a6a64);
-        bottomLayout.addTab(R.drawable.selector_news, "Newsstand", 0xff553b36);
+        bottomLayout.addTab(R.drawable.selector_movie, "报修", 0xff4a5965);
+        bottomLayout.addTab(R.drawable.selector_music, "市场", 0xff096c54);
+        bottomLayout.addTab(R.drawable.selector_books, "订单", 0xff8a6a64);
+        bottomLayout.addTab(R.drawable.selector_news, "个人", 0xff553b36);
         bottomLayout.setOnTabListener(new BottomNavigationBar.TabListener() {
             @Override
             public void onSelected(BottomBarTab tab, int position) {
