@@ -1,6 +1,7 @@
 package com.songlin.dispatch.activity;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,12 +24,14 @@ public class GuidePageActivity extends AppCompatActivity {
         welcomeScreen = new WelcomeScreenHelper(this, GuideWelcomeActivity.class);
         welcomeScreen.show(savedInstanceState);
 
-        findViewById(R.id.button_show).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                welcomeScreen.forceShow();
-            }
-        });
+        welcomeScreen.forceShow();
+
+//        findViewById(R.id.button_show).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                welcomeScreen.forceShow();
+//            }
+//        });
     }
 
     @Override
@@ -39,8 +42,10 @@ public class GuidePageActivity extends AppCompatActivity {
             String welcomeKey = data.getStringExtra(WelcomeActivity.WELCOME_SCREEN_KEY);
 
             if (resultCode == RESULT_OK) {
-                Toast.makeText(getApplicationContext(), GuideWelcomeActivity.welcomeKey() + "已完成", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, MainActivity.class));
+//                Toast.makeText(getApplicationContext(), GuideWelcomeActivity.welcomeKey() + "已完成", Toast.LENGTH_SHORT).show();
             } else {
+                startActivity(new Intent(this, MainActivity.class));
                 Toast.makeText(getApplicationContext(), "您已跳过派工简介，可在版本页重新观看" + GuideWelcomeActivity.welcomeKey(), Toast.LENGTH_SHORT).show();
             }
 

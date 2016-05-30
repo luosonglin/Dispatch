@@ -58,7 +58,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="12dp"
                 android:layout_toRightOf="@+id/user_logo_civ"
-                android:text="简介：宅米网 职员"
+                android:text="简介: 宅米网 职员"
                 android:textColor="#A5A5A5" />
         </LinearLayout>
 
@@ -79,6 +79,43 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/credits_wrap_llyt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/credits_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="2dp"
+                android:text="1400"
+                android:textColor="@color/red"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/credits_icon_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:text="微博"
+                android:textColor="#A5A5A5"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#f4f4f4" />
+
+        <LinearLayout
             android:id="@+id/wallet_wrap_llyt"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -91,7 +128,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="bottom|center_horizontal"
-                android:paddingBottom="4dp"
+                android:paddingBottom="2dp"
                 android:text="300"
                 android:textColor="@color/red"
                 android:textSize="17sp" />
@@ -102,7 +139,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:paddingTop="4dp"
+                android:paddingTop="2dp"
                 android:text="关注"
                 android:textColor="#A5A5A5"
                 android:textSize="13sp" />
@@ -128,7 +165,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="bottom|center_horizontal"
-                android:paddingBottom="4dp"
+                android:paddingBottom="2dp"
                 android:text="1400"
                 android:textColor="@color/red"
                 android:textSize="17sp" />
@@ -139,49 +176,14 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:paddingTop="4dp"
+                android:paddingTop="2dp"
                 android:text="粉丝"
                 android:textColor="#A5A5A5"
                 android:textSize="13sp" />
 
         </LinearLayout>
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            android:background="#f4f4f4" />
 
-        <LinearLayout
-            android:id="@+id/credits_wrap_llyt"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/credits_tv"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="4dp"
-                android:text="1400"
-                android:textColor="@color/red"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/credits_icon_tv"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:paddingTop="4dp"
-                android:text="微博"
-                android:textColor="#A5A5A5"
-                android:textSize="13sp" />
-
-        </LinearLayout>
 
     </LinearLayout>
 

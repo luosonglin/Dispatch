@@ -84,6 +84,12 @@ public class MoviesFragment extends Fragment implements BaseSliderView.OnSliderC
 //            }
 //        });
 
+        view.findViewById(R.id.test).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "test haha", Toast.LENGTH_SHORT).show();
+            }
+        });
         return view;
     }
 
