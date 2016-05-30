@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.songlin.dispatch.activity.activities">
+    package="com.songlin.dispatch">
 
     <!--
     <uses-permission android:name="android.permission.CALL_PHONE"/>
@@ -28,23 +28,24 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.songlin.dispatch.activity.LaunchScreenActivity">
+        <activity android:name=".activity.LaunchScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.songlin.dispatch.activity.GuidePageActivity" />
-        <activity android:name="com.songlin.dispatch.activity.LoginActivity" />
+        <activity android:name=".activity.GuidePageActivity" />
+        <activity android:name=".activity.LoginActivity" />
         <activity
-            android:name="com.songlin.dispatch.widget.GuideWelcomeActivity"
+            android:name=".widget.GuideWelcomeActivity"
             android:theme="@style/WelcomeScreenTheme" />
-        <activity android:name="com.songlin.dispatch.activity.SignupActivity" />
+        <activity android:name=".activity.SignupActivity" />
         <activity
-            android:name="com.songlin.dispatch.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.PersonHomeActivity"></activity>
     </application>
 
 </manifest>

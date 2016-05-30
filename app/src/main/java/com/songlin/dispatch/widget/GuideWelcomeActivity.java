@@ -1,7 +1,7 @@
 package com.songlin.dispatch.widget;
 
 
-import com.songlin.dispatch.activity.activities.R;
+import com.songlin.dispatch.R;
 import com.stephentuso.welcome.WelcomeScreenBuilder;
 import com.stephentuso.welcome.ui.WelcomeActivity;
 import com.stephentuso.welcome.util.WelcomeScreenConfiguration;

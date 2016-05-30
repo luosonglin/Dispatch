@@ -3,7 +3,7 @@ package com.songlin.dispatch.activity;
 import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.songlin.dispatch.activity.activities.R;
+import com.songlin.dispatch.R;
 import com.songlin.dispatch.utils.AccountUtils;
 
 import android.content.Context;

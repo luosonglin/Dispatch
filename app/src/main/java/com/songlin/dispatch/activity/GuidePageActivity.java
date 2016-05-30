@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.songlin.dispatch.activity.activities.R;
+import com.songlin.dispatch.R;
 import com.songlin.dispatch.widget.GuideWelcomeActivity;
 import com.stephentuso.welcome.WelcomeScreenHelper;
 import com.stephentuso.welcome.ui.WelcomeActivity;

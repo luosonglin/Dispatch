@@ -38,4 +38,5 @@ dependencies {
     compile 'com.github.RoyWallace:BottomNavigationBar:v0.3'
     //轮播图
     compile 'com.daimajia.slider:library:1.1.5'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
 }

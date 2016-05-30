@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_chat_detail_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/store_grey_normal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/store_grey_normal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_chat_logo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/avatar_default" />
+
+        <TextView
+            android:id="@+id/item_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/item_chat_logo"
+            android:singleLine="true"
+            android:text="采蘑菇的松林"
+            android:textColor="@color/catalog_darker"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/item_chat_content_rll"
+            android:layout_alignRight="@+id/item_chat_content_rll"
+            android:layout_alignTop="@+id/item_chat_name"
+            android:text="04-13  12:49"
+            android:textColor="@color/grey" />
+
+        <RelativeLayout
+            android:id="@+id/item_chat_content_rll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_chat_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/item_chat_logo">
+
+            <TextView
+                android:id="@+id/item_chat_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请问宅米感觉如何？哪个粉是你最爱的？在线等，挺急eee的！挺急的！请问艹粉感觉如何？哪个粉是你最爱的？在线等，挺急的！挺急的！请问艹粉感觉如何？哪个粉是你最爱的？在线等，挺急的！挺急的！请问艹粉感觉如何？哪个粉是你最爱的？在线等，挺急的！挺急的！在线等，挺急的！挺急的！请问艹粉感觉如何？哪个粉是你最爱的？"
+                android:textColor="@color/catalog_dark"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/item_chat_content_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_chat_content_tv"
+                android:src="@drawable/ic_launcher"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/holder_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/item_chat_content_rll"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/store_grey_pressed" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

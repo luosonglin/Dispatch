@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.songlin.dispatch.activity.activities.R;
+import com.songlin.dispatch.R;
 
 
 public class BooksFragment extends Fragment {

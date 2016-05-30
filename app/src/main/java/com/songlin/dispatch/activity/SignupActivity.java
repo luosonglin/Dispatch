@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.songlin.dispatch.activity.activities.R;
+import com.songlin.dispatch.R;
 
 import butterknife.ButterKnife;
 import butterknife.Bind;

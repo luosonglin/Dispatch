@@ -1,14 +1,8 @@
 package com.songlin.dispatch.activity;
 
-import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.content.ContextCompat;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -20,11 +14,11 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.songlin.dispatch.activity.activities.R;
+import com.songlin.dispatch.R;
 import com.songlin.dispatch.fragment.BooksFragment;
 import com.songlin.dispatch.fragment.MoviesFragment;
 import com.songlin.dispatch.fragment.MusicFragment;
-import com.songlin.dispatch.fragment.NewsstandFragment;
+import com.songlin.dispatch.fragment.PersonFragment;
 
 import etong.bottomnavigation.lib.BottomBarTab;
 import etong.bottomnavigation.lib.BottomNavigationBar;
@@ -94,7 +88,7 @@ public class MainActivity extends AppCompatActivity
                         fragment = BooksFragment.newInstance();
                         break;
                     case 3:
-                        fragment = NewsstandFragment.newInstance();
+                        fragment = PersonFragment.newInstance();
                         break;
                     default:
                         fragment = MoviesFragment.newInstance();
