@@ -7,8 +7,9 @@
 
     <!-- basic colors -->
     <color name="green">#27D34D</color>
-    <color name="blue">#2A91BD</color>
+    <color name="blue">#00b3ff</color>
     <color name="orange">#FF9D2F</color>
+    <color name="yellow">#ffee00</color>
 
 
     <color name="background">#f8f8f8</color>
@@ -71,6 +72,14 @@
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
 
+    <color name="colorPrimary">#32A2F8</color><!--#5B8FFB-->
+    <color name="colorPrimaryDark">#32A2F8</color>
+
     <color name="store_grey_normal">#FAFAFA</color>
     <color name="store_grey_pressed">#40FF384D</color>
+
+    <color name="white_normal">#ffffff</color>
+    <color name="white_pressed">#7F32A2F8</color>
+
+    <color name="orderTextColor">#A5A5A5</color>
 </resources>

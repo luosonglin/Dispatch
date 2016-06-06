@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--ellipsize属性-->
+    <!--设置当文字过长时,该控件该如何显示。有如下值设置：”start”—–省略号显示在开头；”end”——省略号显示在结尾；”middle”—-省略号显示在中间；”marquee” ——以跑马灯的方式显示(动画横向移动)-->
+    <!--marqueeRepeatLimit属性-->
+    <!--在ellipsize指定marquee的情况下，设置重复滚动的次数，当设置为marquee_forever时表示无限次。-->
+    <!--focusable属性-->
+    <!--能否获得焦点，同样focusableInTouchMode应该是滑动时能否获得焦点。-->
+    <TextView
+        android:id="@+id/chat_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="实时聊天，把握维修进度，给予用户极致的体验,hahahahhhahahhah"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:background="@color/store_grey_normal">
+
+        <RelativeLayout
+            android:id="@+id/chat_detail_wrap_rlyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="6dp">
+
+            <com.songlin.chengyu.widget.pulltorefresh.PullToRefreshLayout
+                android:id="@+id/chat_detail_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/store_grey_normal"
+                android:layout_above="@+id/chat_detail_input_rlyt">
+
+                <com.songlin.chengyu.widget.pulltorefresh.PullableRecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/store_grey_normal">
+
+                </com.songlin.chengyu.widget.pulltorefresh.PullableRecyclerView>
+
+            </com.songlin.chengyu.widget.pulltorefresh.PullToRefreshLayout>
+
+            <include
+                android:id="@+id/empty_view"
+                layout="@layout/view_empty_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:id="@+id/chat_detail_input_rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize">
+
+                <EditText
+                    android:id="@+id/chat_detail_input_ev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toLeftOf="@+id/chat_detail_input_holder"
+                    android:background="@drawable/border_radius_white"
+                    android:focusable="true"
+                    android:hint="请输入留言内容(150字以内)"
+                    android:imeOptions="actionSearch"
+                    android:minHeight="32dp"
+                    android:paddingLeft="8dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/chat_detail_input_holder"
+                    android:layout_width="1dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/chat_detail_send_tv"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chat_detail_send_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="发送"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -28,24 +28,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.LaunchScreenActivity">
+        <activity android:name="com.songlin.chengyu.activity.LaunchScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.GuidePageActivity" />
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name="com.songlin.chengyu.activity.GuidePageActivity" />
+        <activity android:name="com.songlin.chengyu.activity.LoginActivity" />
         <activity
-            android:name=".widget.GuideWelcomeActivity"
+            android:name="com.songlin.chengyu.widget.GuideWelcomeActivity"
             android:theme="@style/WelcomeScreenTheme" />
-        <activity android:name=".activity.SignupActivity" />
+        <activity android:name="com.songlin.chengyu.activity.SignupActivity" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.songlin.chengyu.activity.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.PersonHomeActivity"></activity>
     </application>
 
 </manifest>
