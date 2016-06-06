@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context="com.songlin.chengyu.fragment.MarketFragment">
+    tools:context="com.songlin.dispatch.fragment.MarketFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

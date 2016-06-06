@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">移动派工</string>
+    <string name="app_name">小朋友成语</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">设置</string>
     <string name="luo">luosonglin</string>
@@ -11,22 +11,6 @@
     <string name="camera_tv">拍照</string>
     <string name="shopping_tv">联系人</string>
     <string name="show_tv">我</string>
-    <string name="index_looks_tv">搭配/LOOKS</string>
-    <string name="index_looks_info_tv">物流男生实拍每日搭配</string>
-    <string name="index_shopping_tv">装备/EQUIPMENT</string>
-    <string name="index_shopping_info_tv">专家经验分享/最佳装备私藏</string>
-    <string name="index_show_tv">晒货/SHOW</string>
-    <string name="index_show_info_tv">实拍派工战果</string>
-    <string name="index_search_tv">搜索/SEARCH</string>
-    <string name="index_search_info_tv">发现最热交易</string>
-    <string name="index_browse_tv">随便逛逛/BROWSER</string>
-    <string name="index_browse_info_tv">看大家都在说啥</string>
-    <string name="register_tip">提示\n带*号项为必填项\n填写手机号方便您找回密码以及了解更多松林派工信息</string>
-    <string name="add_attention">定位</string>
-    <string name="user_post">松林集团创始人兼CEO</string>
-    <string name="user_book">互联网金融、电子商务、物流</string>
-    <string name="user_name">罗崧麟</string>
-    <string name="user_des">世界最大的互联网公司，提供最全面的商业解决方案</string>
     <string name="user_recommend_tip">TA的业务</string>
     <string name="question">请输入订单号</string>
 
@@ -46,7 +30,6 @@
     <string name="account">账户</string>
     <string name="change_password">修改密码</string>
     <string name="change_version">版本更新</string>
-    <string name="about_dispatch">关于移动派工</string>
     <string name="feedback">意见反馈</string>
     <string name="call">联系作者</string>
     <string name="log_out">退出登录</string>
@@ -67,5 +50,6 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="haha"></string>
 
 </resources>

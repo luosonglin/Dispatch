@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.songlin.chengyu.activity.LaunchScreenActivity">
+    tools:context="com.songlin.dispatch.activity.LaunchScreenActivity">
 <TextView
     android:layout_width="wrap_content"
     android:textSize="16sp"
